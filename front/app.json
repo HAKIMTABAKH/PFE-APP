@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "BlazeDefend",
+    "slug": "BlazeDefend",
+    "scheme": "myapp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FE5A24"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourapp.bundle",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "We need your location to show fire alerts on the map."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/splash.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": ["ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"],
+      "package": "com.yourapp.blazedefend",
+      "config": {
+        "googleMaps": {
+          "apiKey": "EXPO_PUBLIC_GOOGLE_API_KEY"
+        }
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "android": {
+      "newArchEnabled": true
+    }
+  }
+}
